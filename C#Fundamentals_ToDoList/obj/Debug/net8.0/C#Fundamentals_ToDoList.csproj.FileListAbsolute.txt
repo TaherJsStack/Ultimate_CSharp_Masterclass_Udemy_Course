@@ -1,0 +1,14 @@
+D:\UltimateCSharpMasterclassUdemyCourse\C#Fundamentals_ToDoList\bin\Debug\net8.0\C#Fundamentals_ToDoList.exe
+D:\UltimateCSharpMasterclassUdemyCourse\C#Fundamentals_ToDoList\bin\Debug\net8.0\C#Fundamentals_ToDoList.deps.json
+D:\UltimateCSharpMasterclassUdemyCourse\C#Fundamentals_ToDoList\bin\Debug\net8.0\C#Fundamentals_ToDoList.runtimeconfig.json
+D:\UltimateCSharpMasterclassUdemyCourse\C#Fundamentals_ToDoList\bin\Debug\net8.0\C#Fundamentals_ToDoList.dll
+D:\UltimateCSharpMasterclassUdemyCourse\C#Fundamentals_ToDoList\bin\Debug\net8.0\C#Fundamentals_ToDoList.pdb
+D:\UltimateCSharpMasterclassUdemyCourse\C#Fundamentals_ToDoList\obj\Debug\net8.0\C#Fundamentals_ToDoList.GeneratedMSBuildEditorConfig.editorconfig
+D:\UltimateCSharpMasterclassUdemyCourse\C#Fundamentals_ToDoList\obj\Debug\net8.0\C#Fundamentals_ToDoList.AssemblyInfoInputs.cache
+D:\UltimateCSharpMasterclassUdemyCourse\C#Fundamentals_ToDoList\obj\Debug\net8.0\C#Fundamentals_ToDoList.AssemblyInfo.cs
+D:\UltimateCSharpMasterclassUdemyCourse\C#Fundamentals_ToDoList\obj\Debug\net8.0\C#Fundamentals_ToDoList.csproj.CoreCompileInputs.cache
+D:\UltimateCSharpMasterclassUdemyCourse\C#Fundamentals_ToDoList\obj\Debug\net8.0\C#Fundamentals_ToDoList.dll
+D:\UltimateCSharpMasterclassUdemyCourse\C#Fundamentals_ToDoList\obj\Debug\net8.0\refint\C#Fundamentals_ToDoList.dll
+D:\UltimateCSharpMasterclassUdemyCourse\C#Fundamentals_ToDoList\obj\Debug\net8.0\C#Fundamentals_ToDoList.pdb
+D:\UltimateCSharpMasterclassUdemyCourse\C#Fundamentals_ToDoList\obj\Debug\net8.0\C#Fundamentals_ToDoList.genruntimeconfig.cache
+D:\UltimateCSharpMasterclassUdemyCourse\C#Fundamentals_ToDoList\obj\Debug\net8.0\ref\C#Fundamentals_ToDoList.dll
