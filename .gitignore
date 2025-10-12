@@ -1,4 +1,6 @@
-.vs
-bin
+.vs/
+bin/
+obj/
 Dockerfile
 .dockerignore
+.gitignore
