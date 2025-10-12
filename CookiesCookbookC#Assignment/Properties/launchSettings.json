@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "CookiesCookbookC#Assignment": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "H7v4R23KDiI=",
+  "success": true,
+  "projectFilePath": "D:\\UltimateCSharpMasterclassUdemyCourse\\CookiesCookbookC#Assignment\\CookiesCookbookC#Assignment.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\taher.ahmed\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.21.0\\microsoft.visualstudio.azure.containers.tools.targets.1.21.0.nupkg.sha512"
+  ],
+  "logs": []
+}

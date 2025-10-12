@@ -1,0 +1,14 @@
+D:\UltimateCSharpMasterclassUdemyCourse\CookiesCookbookC#Assignment\obj\Debug\net8.0\CookiesCookbookC#Assignment.GeneratedMSBuildEditorConfig.editorconfig
+D:\UltimateCSharpMasterclassUdemyCourse\CookiesCookbookC#Assignment\obj\Debug\net8.0\CookiesCookbookC#Assignment.AssemblyInfoInputs.cache
+D:\UltimateCSharpMasterclassUdemyCourse\CookiesCookbookC#Assignment\obj\Debug\net8.0\CookiesCookbookC#Assignment.AssemblyInfo.cs
+D:\UltimateCSharpMasterclassUdemyCourse\CookiesCookbookC#Assignment\obj\Debug\net8.0\CookiesCookbookC#Assignment.csproj.CoreCompileInputs.cache
+D:\UltimateCSharpMasterclassUdemyCourse\CookiesCookbookC#Assignment\bin\Debug\net8.0\CookiesCookbookC#Assignment.exe
+D:\UltimateCSharpMasterclassUdemyCourse\CookiesCookbookC#Assignment\bin\Debug\net8.0\CookiesCookbookC#Assignment.deps.json
+D:\UltimateCSharpMasterclassUdemyCourse\CookiesCookbookC#Assignment\bin\Debug\net8.0\CookiesCookbookC#Assignment.runtimeconfig.json
+D:\UltimateCSharpMasterclassUdemyCourse\CookiesCookbookC#Assignment\bin\Debug\net8.0\CookiesCookbookC#Assignment.dll
+D:\UltimateCSharpMasterclassUdemyCourse\CookiesCookbookC#Assignment\bin\Debug\net8.0\CookiesCookbookC#Assignment.pdb
+D:\UltimateCSharpMasterclassUdemyCourse\CookiesCookbookC#Assignment\obj\Debug\net8.0\CookiesCookbookC#Assignment.dll
+D:\UltimateCSharpMasterclassUdemyCourse\CookiesCookbookC#Assignment\obj\Debug\net8.0\refint\CookiesCookbookC#Assignment.dll
+D:\UltimateCSharpMasterclassUdemyCourse\CookiesCookbookC#Assignment\obj\Debug\net8.0\CookiesCookbookC#Assignment.pdb
+D:\UltimateCSharpMasterclassUdemyCourse\CookiesCookbookC#Assignment\obj\Debug\net8.0\CookiesCookbookC#Assignment.genruntimeconfig.cache
+D:\UltimateCSharpMasterclassUdemyCourse\CookiesCookbookC#Assignment\obj\Debug\net8.0\ref\CookiesCookbookC#Assignment.dll
