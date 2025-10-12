@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "UltimateCSharpMasterclassUdemyCourse": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
