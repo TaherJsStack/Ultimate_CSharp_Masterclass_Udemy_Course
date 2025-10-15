@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SRP", "SRP\SRP.csproj", "{A
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CookiesCookbookC#Assignment", "CookiesCookbookC#Assignment\CookiesCookbookC#Assignment.csproj", "{F9017AED-3D79-40A2-9859-2336CE9343FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiceRollGame_Assignment", "DiceRollGame_Assignment\DiceRollGame_Assignment.csproj", "{A3616A0A-54B8-4C2B-A4CE-B1CB337D9976}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiceRollGame_Assignment", "DiceRollGame_Assignment\DiceRollGame_Assignment.csproj", "{A3616A0A-54B8-4C2B-A4CE-B1CB337D9976}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameDataParser_Assignment", "GameDataParser_Assignment\GameDataParser_Assignment.csproj", "{96E764E9-C6D4-45E1-AD1E-BBCF92D6B100}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{A3616A0A-54B8-4C2B-A4CE-B1CB337D9976}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3616A0A-54B8-4C2B-A4CE-B1CB337D9976}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3616A0A-54B8-4C2B-A4CE-B1CB337D9976}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96E764E9-C6D4-45E1-AD1E-BBCF92D6B100}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96E764E9-C6D4-45E1-AD1E-BBCF92D6B100}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96E764E9-C6D4-45E1-AD1E-BBCF92D6B100}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96E764E9-C6D4-45E1-AD1E-BBCF92D6B100}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
