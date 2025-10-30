@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "RefactoringToLINQ_Assignment": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
