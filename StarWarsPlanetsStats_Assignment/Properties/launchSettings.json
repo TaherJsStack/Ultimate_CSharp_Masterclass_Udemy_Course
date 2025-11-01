@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "StarWarsPlanetsStats_Assignment": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
