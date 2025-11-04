@@ -6,10 +6,14 @@ list.AddToFront("a");
 list.AddToFront("b");
 list.AddToFront("c");
 
-list.Add("e");
-list.Add("f");
-list.Clear();
+//list.Add("e");
+//list.Add("f");
+//list.Clear();
 
+//list.Remove("c");
+
+Console.WriteLine("Contains c ? " + list.Contains("c"));
+Console.WriteLine("Contains d ? " + list.Contains("d"));
 
 foreach (var item in list)
 {
@@ -71,18 +75,17 @@ public class SinglyLinkedList<T> : ILinkedList<T?>
             current = current.Next;
             temporary.Next = null;
         }
-
-        //foreach (var node in GetNodes().ToList() )
-        //{
-        //    node.Next = null;
-        //}
         _head = null;
         _count = 0;
     }
 
     public bool Contains(T? item)
     {
-        throw new NotImplementedException();
+        if (item is null)
+        {
+            return GetNodes().Any( node => node.Value is null );
+        }
+        return GetNodes().Any( node => item.Equals(node.Value) );
     }
 
     public void CopyTo(T?[] array, int arrayIndex)
@@ -92,7 +95,25 @@ public class SinglyLinkedList<T> : ILinkedList<T?>
 
     public bool Remove(T? item)
     {
-        throw new NotImplementedException();
+        Node<T>? predecessor = null;
+        foreach (var node in GetNodes() )
+        {
+            if ((node.Value is null && item is null) || (node.Value is not null && node.Value.Equals(item)))
+            {
+                if (predecessor is null)
+                {
+                    _head = node.Next;
+                } else
+                {
+                    predecessor.Next = node.Next;
+                }
+
+                --_count;
+                return true;
+            }
+            predecessor = node; 
+        }
+        return false;
     }
 
     public IEnumerator<T?> GetEnumerator()
