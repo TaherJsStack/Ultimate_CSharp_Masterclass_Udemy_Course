@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "CustomLinkedList_Assignment": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
