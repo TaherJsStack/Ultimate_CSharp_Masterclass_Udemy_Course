@@ -6,6 +6,9 @@ list.AddToFront("a");
 list.AddToFront("b");
 list.AddToFront("c");
 
+list.Add("e");
+list.Add("f");
+
 
 foreach (var item in list)
 {
@@ -31,12 +34,21 @@ public class SinglyLinkedList<T> : ILinkedList<T?>
 
     public void Add(T? item)
     {
-        throw new NotImplementedException();
+        AddToEnd(item);
     }
 
     public void AddToEnd(T? item)
     {
-        throw new NotImplementedException();
+        var newNode = new Node<T>(item);
+        if (_head is null)
+        {
+            _head = newNode;
+        } else
+        {
+            var tail = GetNodes().Last();
+            tail.Next = newNode;
+        }
+        ++_count;
     }
 
     public void AddToFront(T? item)
