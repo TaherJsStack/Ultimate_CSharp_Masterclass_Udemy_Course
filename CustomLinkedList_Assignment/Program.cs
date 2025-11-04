@@ -8,6 +8,7 @@ list.AddToFront("c");
 
 list.Add("e");
 list.Add("f");
+list.Clear();
 
 
 foreach (var item in list)
@@ -63,7 +64,20 @@ public class SinglyLinkedList<T> : ILinkedList<T?>
 
     public void Clear()
     {
-        throw new NotImplementedException();
+        Node<T>? current = _head;
+        while (current is not null)
+        {
+            Node<T>? temporary = current;
+            current = current.Next;
+            temporary.Next = null;
+        }
+
+        //foreach (var node in GetNodes().ToList() )
+        //{
+        //    node.Next = null;
+        //}
+        _head = null;
+        _count = 0;
     }
 
     public bool Contains(T? item)
