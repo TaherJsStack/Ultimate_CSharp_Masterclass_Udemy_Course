@@ -12,8 +12,12 @@ list.AddToFront("c");
 
 //list.Remove("c");
 
-Console.WriteLine("Contains c ? " + list.Contains("c"));
-Console.WriteLine("Contains d ? " + list.Contains("d"));
+//Console.WriteLine("Contains c ? " + list.Contains("c"));
+//Console.WriteLine("Contains d ? " + list.Contains("d"));
+
+var arr = new string[7];
+
+list.CopyTo(arr, 2);
 
 foreach (var item in list)
 {
@@ -90,7 +94,24 @@ public class SinglyLinkedList<T> : ILinkedList<T?>
 
     public void CopyTo(T?[] array, int arrayIndex)
     {
-        throw new NotImplementedException();
+
+        if (array is null)
+        {
+            throw new ArgumentNullException(nameof(array));
+        }
+        if (arrayIndex < 0 || arrayIndex >= array.Length )
+        {
+            throw new ArgumentOutOfRangeException(nameof(arrayIndex));
+        }
+        if (array.Length < _count + arrayIndex)
+        {
+            throw new ArithmeticException("Array is not long enough");
+        }
+        foreach (var node in GetNodes())
+        {
+            array[arrayIndex] = node.Value;
+            ++arrayIndex;
+        }
     }
 
     public bool Remove(T? item)
