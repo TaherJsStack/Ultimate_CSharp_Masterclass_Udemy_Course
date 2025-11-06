@@ -1,6 +1,8 @@
 ﻿
 using UglyToad.PdfPig.Content;
 using UglyToad.PdfPig;
+using UglyToad.PdfPig.DocumentLayoutAnalysis;
+using System.Globalization;
 
 const string TicketsFolder = @"Tickets\";
 
@@ -20,7 +22,13 @@ Console.ReadKey();
 public class TicketsAggregator
 {
 	private readonly string _ticketsFolder;
+    private readonly Dictionary<string, string> _domainToCultureMapping = new()
+    {
+        [".com"] = "en-US",
+        [".fr"] = "fr-FR",
+        [".jp"] = "ja-JP",
 
+    };
     public TicketsAggregator(string ticketsFolder)
     {
         _ticketsFolder = ticketsFolder;
@@ -38,21 +46,35 @@ public class TicketsAggregator
             Page page = document.GetPage(1);
             string text = page.Text;
 
+
             var split = text.Split(
                 new[] {"Title:", "Date:", "Time:", "Visit us:" }, 
                 StringSplitOptions.None
                 );
 
+            var domain = ExtractDomain(split.Last());
+            var ticketCulture = _domainToCultureMapping[domain];
+
             for (int i = 1; i < split.Length -3; i += 3)
             {
                 var title = split[i];
-                var date = split[i + 1];
-                var time = split[i + 2];
+                var dateAsStriong = split[i + 1];
+                var timeAsStriong = split[i + 2];
+            
+                var date = DateOnly.Parse(dateAsStriong, new CultureInfo(ticketCulture));
+                var time = TimeOnly.Parse(dateAsStriong, new CultureInfo(timeAsStriong));
+
             }
 
 
         }
 
+    }
+
+    private static string ExtractDomain(string webAddress)
+    {
+        var lastDotIndex = webAddress.LastIndexOf(".");
+        return webAddress.Substring(lastDotIndex);
     }
 }
 
