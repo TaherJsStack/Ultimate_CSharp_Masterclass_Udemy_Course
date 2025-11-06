@@ -8,10 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CookiesCookbookC_Assignment
-<<<<<<< HEAD
-build_property.ProjectDir = d:\UltimateCSharpMasterclassUdemyCourse\CookiesCookbookC#Assignment\
-=======
 build_property.ProjectDir = D:\UltimateCSharpMasterclassUdemyCourse\CookiesCookbookC#Assignment\
->>>>>>> 09561d9b6b5c7e9b6044664e57b5b7c22086d468
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

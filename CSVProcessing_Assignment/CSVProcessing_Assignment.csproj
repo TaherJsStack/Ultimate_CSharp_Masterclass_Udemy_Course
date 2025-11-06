@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Debug\net8.0\CSVProcessing_Assignment.deps.json" />
+    <Content Include="bin\Debug\net8.0\CSVProcessing_Assignment.runtimeconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\net7.0\sampleData.csv" />
+    <None Include="bin\Debug\net8.0\CSVProcessing_Assignment.dll" />
+    <None Include="bin\Debug\net8.0\CSVProcessing_Assignment.exe" />
+    <None Include="bin\Debug\net8.0\CSVProcessing_Assignment.pdb" />
+    <None Include="bin\Debug\net8.0\data\sampleData.csv" />
+    <None Include="NetUnderTheHoodAssignment.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
+  </ItemGroup>
+
+</Project>
