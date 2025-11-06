@@ -3,8 +3,9 @@ using UglyToad.PdfPig.Content;
 using UglyToad.PdfPig;
 using UglyToad.PdfPig.DocumentLayoutAnalysis;
 using System.Globalization;
+using System.Text;
 
-const string TicketsFolder = @"Tickets\";
+const string TicketsFolder = @"Tickets";
 
 try
 {
@@ -36,8 +37,9 @@ public class TicketsAggregator
 
     public void Run()
     {
+        var stringBuilder = new StringBuilder();
 
-        foreach (var filePath in Directory.GetFiles(_ticketsFolder, @"*.pdf")) {
+        foreach (var filePath in Directory.GetFiles(_ticketsFolder+"\\", @"*.pdf")) {
             
             Console.WriteLine($"{filePath}");
             
@@ -60,14 +62,24 @@ public class TicketsAggregator
                 var title = split[i];
                 var dateAsStriong = split[i + 1];
                 var timeAsStriong = split[i + 2];
-            
-                var date = DateOnly.Parse(dateAsStriong, new CultureInfo(ticketCulture));
-                var time = TimeOnly.Parse(dateAsStriong, new CultureInfo(timeAsStriong));
 
+                var culture = new CultureInfo(ticketCulture);
+
+                var date = DateOnly.Parse(dateAsStriong, culture);
+                var time = TimeOnly.Parse(timeAsStriong, culture);
+
+                var dateAsStringInvariant = date.ToString(CultureInfo.InvariantCulture);
+                var timeAsStringInvariant = time.ToString(CultureInfo.InvariantCulture);
+
+                var tickeData = $"{title, -40} | {dateAsStringInvariant}|{timeAsStringInvariant} \n";
+
+                stringBuilder.Append(tickeData);
             }
-
-
         }
+
+        var resultpath = Path.Combine(_ticketsFolder, "aggregatedTickets.txt");
+        File.WriteAllText(resultpath, stringBuilder.ToString());
+        Console.WriteLine("Results Saved To: " + _ticketsFolder + " Folder" + "\nIn:" + resultpath);
 
     }
 
