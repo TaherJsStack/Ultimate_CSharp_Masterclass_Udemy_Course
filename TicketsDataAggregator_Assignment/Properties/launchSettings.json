@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "TicketsDataAggregator_Assignment": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
