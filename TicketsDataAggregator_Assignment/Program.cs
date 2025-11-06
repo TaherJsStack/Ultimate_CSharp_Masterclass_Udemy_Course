@@ -29,15 +29,15 @@ public class TicketsAggregator
     public void Run()
     {
 
-
-        using (PdfDocument document = PdfDocument.Open(_ticketsFolder + @"\Tickets1.pdf"))
-        {
-
-            // Page number starts from 1, not 0.
-            Page page = document.GetPage(1);
-
-            string text = page.Text;
+        foreach (var filePath in Directory.GetFiles(_ticketsFolder + "*.pdf")) { 
+            using (PdfDocument document = PdfDocument.Open(filePath))
+            {
+                // Page number starts from 1, not 0.
+                Page page = document.GetPage(1);
+                string text = page.Text;
+            }
         }
+
     }
 }
 
